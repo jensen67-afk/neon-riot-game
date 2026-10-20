@@ -1,0 +1,80 @@
+
+<script type="importmap">
+
+{
+
+  "imports": {
+
+    "three": "https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js",
+
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"
+
+  }
+
+}
+
+</script>
+<div id="game"></div>
+
+<div id="hud">
+
+  <h1>NEON RIOT</h1>
+
+  <p>3D ROCK RHYTHM</p>
+
+  <div id="score">SCORE: 0</div>
+
+  <button id="start">START SONG</button>
+
+  <p id="message">READY TO ROCK?</p>
+
+</div>
+html, body {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  background: #050713;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#game {
+  position: fixed;
+  inset: 0;
+  background: #050713;
+}
+
+#hud {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 25px 10px;
+  pointer-events: none;
+}
+
+h1 {
+  color: #65f4ff;
+  letter-spacing: 5px;
+  text-shadow: 0 0 15px #00dfff;
+}
+
+#score {
+  color: #ff54df;
+  font-size: 24px;
+  margin: 20px;
+}
+
+button {
+  pointer-events: auto;
+  background: #65f4ff;
+  color: #07111b;
+  border: 0;
+  border-radius: 12px;
+  padding: 14px 22px;
+  font-weight: bold;
+}
+
+#message {
+  color: #65f4ff;
+  font-size: 20px;
+}
